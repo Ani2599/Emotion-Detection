@@ -1,15 +1,56 @@
-# Emotion-Detection
-This project explores the implementation and comparison of Convolutional Neural Networks (CNN) architectures for image classification tasks. Three CNN architectures, namely ResNet50, VGG16, and a custom CNN, are utilized and evaluated for their performance.
+# Emotion Detection
 
-The deployement is done using Gradio for which the code present inside(.ipynb) file.
+This project implements and compares Convolutional Neural Networks (CNN) architectures for emotion detection from facial expressions. The goal is to classify faces into one of seven emotion categories using deep learning models: ResNet50, VGG16, and a custom CNN. The project is deployed using Gradio and OpenCV.
 
-There are two other deployement files one is test.py and other is emotion_app.py in which the deployement is done using cv2
+## Models
+- **ResNet50**: Pretrained ResNet50 model for emotion detection.
+- **VGG16**: Pretrained VGG16 model for emotion classification.
+- **Custom CNN**: A custom convolutional network model designed for emotion detection.
 
-Note:- Two model files "Custom_CNN_model.keras" and "Final_Resnet50_Best_model.keras" are not uploaded here because of its large size.
+Note: Due to file size restrictions, model files (`Custom_CNN_model.keras`, `Final_Resnet50_Best_model.keras`) are not included in the repository.
 
-# Data Set-
+## Dataset
 
-Kaggle - https://www.kaggle.com/datasets/msambare/fer2013
-The data consists of 48x48 pixel grayscale images of faces. The faces have been automatically registered so that the face is more or less centred and occupies about the same amount of space in each image.
+The dataset used is the **FER-2013** dataset, available on [Kaggle](https://www.kaggle.com/datasets/msambare/fer2013). It contains 48x48 pixel grayscale images of faces, each labeled with one of the following emotions:
 
-The task is to categorize each face based on the emotion shown in the facial expression into one of seven categories (0=Angry, 1=Disgust, 2=Fear, 3=Happy, 4=Sad, 5=Surprise, 6=Neutral)
+- 0: Angry
+- 1: Disgust
+- 2: Fear
+- 3: Happy
+- 4: Sad
+- 5: Surprise
+- 6: Neutral
+
+## Installation
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/Ani2599/Emotion-Detection.git
+    ```
+
+2. Install the dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+## Files
+
+- **Emotion_Detection_Complete_Project.ipynb**: Jupyter notebook containing the full project, including training and evaluation of models.
+- **emotion_app.py**: Python file for emotion detection using OpenCV.
+- **test.py**: Python file for testing the emotion detection model.
+- **requirements.txt**: List of dependencies required to run the project.
+
+## Usage
+
+1. Train and test models using the Jupyter notebook or by running `test.py` and `emotion_app.py`.
+2. Use Gradio for web-based deployment of the emotion detection model.
+
+## Contributing
+
+Feel free to fork the repository and submit pull requests. Contributions are welcome to improve the models and performance.
+
+## License
+
+This project is licensed under the MIT License.
+
+
